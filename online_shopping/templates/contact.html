@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+  <a href="#" class="logo" style="display: block; text-align: center; color: white; ">
+    <h1>Contact Us</h1>
+</a>
+
+  
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+      margin: 0;
+      padding: 0;
+     
+    }
+    h1{
+      padding-right: 100px;
+    
+    }
+    
+    
+
+    .contact-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    
+      
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    .contact-info-item {
+      flex-basis: 45%;
+      margin-bottom: 20px;
+    }
+
+    .contact-info-item h3 {
+      margin-top: 0;
+    }
+
+    .contact-form {
+      background-color: #f4f4f4;
+      padding: 30px;
+      border-radius: 5px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .contact-form button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .contact-form > h2{
+        color: #000;
+    }
+
+    .contact-form button:hover {
+      background-color: #2f70b5;
+    
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-container">
+    <div class="contact-info">
+      <div class="contact-info-item">
+        <h3>Address</h3>
+        <p>1-234 Anjaneyar Street, Namakkal,</p>
+          <p>Tamil Nadu, India</p>
+        
+      </div>
+      <div class="contact-info-item">
+        <h3>Email</h3>
+        <p>shoppingzone2024@example.com</p>
+      </div>
+      <div class="contact-info-item">
+        <h3>Phone</h3>
+        <p>(+91) 9876543210</p>
+      </div>
+      <div class="contact-info-item">
+        <h3>Instagram</h3>
+        <p>@EaSY_ShOpPy_ZoNe</p>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h2>Get in Touch</h2>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
